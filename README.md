@@ -17,7 +17,8 @@ MYSQL database
 		UPDATE mysql.user SET Password=PASSWORD('password') WHERE USER='root' AND Host='localhost';
 
 	2. kreirati tablicu u schemi pomoću navedenog upita:
-		
+
+```sql
 create or replace schema if not exists webappvalute collate latin1_swedish_ci;
 
 create or replace table if not exists hnbapidata
@@ -34,7 +35,7 @@ create or replace table if not exists hnbapidata
 	srednji_za_devize varchar(15) null,
 	prodajni_za_devize varchar(15) null
 );
-
+```
 -po potrebi postaviti:
 	SET GLOBAL time_zone='+02:00';
 -----------------------------------------------------------------------------
