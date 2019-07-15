@@ -11,7 +11,7 @@ Tomcat v8.5 Server
 MYSQL database
 	-mysql-connector-java-8.0.16
 	
--za bazu je potrebno:
+-za bazu je potrebno:  
 	1. kreirati ili ažurirati korisnika na user: "root", password= "password" na mysql serveru
 
 		UPDATE mysql.user SET Password=PASSWORD('password') WHERE USER='root' AND Host='localhost';
