@@ -38,5 +38,5 @@ create or replace table if not exists hnbapidata
 -po potrebi postaviti:
 	SET GLOBAL time_zone='+02:00';
 -----------------------------------------------------------------------------
--za pokretanje stranice pozvati servis sa /GetCurrency
+-za pokretanje stranice pozvati servis sa /GetCurrency  
 	npr. http://localhost:8080/WebAplikacija1/GetCurrency
