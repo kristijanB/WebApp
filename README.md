@@ -14,7 +14,7 @@ MYSQL database
 -za bazu je potrebno:  
 	1. kreirati ili ažurirati korisnika na user: "root", password= "password" na mysql serveru
 
-	```sql	UPDATE mysql.user SET Password=PASSWORD('password') WHERE USER='root' AND Host='localhost';```
+	```sql  	UPDATE mysql.user SET Password=PASSWORD('password') WHERE USER='root' AND Host='localhost';  ```
 
 	2. kreirati tablicu u schemi pomoću navedenog upita:
 
