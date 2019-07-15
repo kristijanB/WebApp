@@ -2,9 +2,9 @@
 Korišteno za zadatak:
 
 Java:
-openjdk version "1.8.0_212"
-OpenJDK Runtime Environment (build 1.8.0_212-8u212-b03-0ubuntu1.16.04.1-b03)
-OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)
+openjdk version "1.8.0_212"  
+OpenJDK Runtime Environment (build 1.8.0_212-8u212-b03-0ubuntu1.16.04.1-b03)  
+OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)  
 -----------------------------------------------------------------------------
 Tomcat v8.5 Server
 -----------------------------------------------------------------------------
