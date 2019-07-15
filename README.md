@@ -8,7 +8,7 @@ OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)
 -----------------------------------------------------------------------------
 Tomcat v8.5 Server
 -----------------------------------------------------------------------------
-MYSQL database
+MYSQL baza podataka  
 	-mysql-connector-java-8.0.16
 	
 -za bazu je potrebno:  
