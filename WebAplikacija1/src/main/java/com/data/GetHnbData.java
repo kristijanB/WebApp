@@ -1,13 +1,13 @@
 package com.data;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.pojo.TecajPOJO;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pojo.TecajPOJO;
 
 public class GetHnbData {
 	private String streamToString(InputStream input) {
@@ -15,7 +15,7 @@ public class GetHnbData {
 		return text;
 	}
 
-	public TecajPOJO[] jsonGetRequest() throws IOException {
+	public TecajPOJO[] getJsonData() throws IOException {
 		String json = null;
 		String s = null;
 		try {
@@ -33,10 +33,10 @@ public class GetHnbData {
 			ex.printStackTrace();
 		}
 
-		return object(json);
+		return hnbJsonObject(json);
 	}
 
-	public TecajPOJO[] object(String json) throws IOException {
+	public TecajPOJO[] hnbJsonObject(String json) throws IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		TecajPOJO[] tecajPOJO = mapper.readValue(json, TecajPOJO[].class);
 		return tecajPOJO;

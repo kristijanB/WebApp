@@ -4,24 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>GetCurrency</servlet-name>
-  	<display-name>GetCurrency</display-name>
-  	<description></description>
-  	<servlet-class>com.servlet.GetCurrency</servlet-class>
-  	
-  </servlet>
-  <servlet>
+
+	<servlet>
   	<servlet-name>GetCalc</servlet-name>
   	<display-name>GetCalc</display-name>
   	<description></description>
   	<servlet-class>com.servlet.GetCalc</servlet-class>
   </servlet>
-  <servlet-mapping>
-  	<servlet-name>GetCurrency</servlet-name>
-  	<url-pattern>/GetCurrency</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
+
+	<servlet-mapping>
   	<servlet-name>GetCalc</servlet-name>
   	<url-pattern>/GetCalc</url-pattern>
   </servlet-mapping>

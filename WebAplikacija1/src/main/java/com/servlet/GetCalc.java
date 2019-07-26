@@ -1,30 +1,29 @@
 package com.servlet;
 
-import java.io.IOException;
-import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import com.data.GetDBConnection;
+import com.data.GetHnbData;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.data.GetDBConnection;
-import com.data.GetHnbData;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Servlet implementation class GetCurrency
  */
-public class GetCurrency extends HttpServlet {
+public class GetCalc extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public GetCurrency() {
+	public GetCalc() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -44,11 +43,11 @@ public class GetCurrency extends HttpServlet {
 		String string = "<option value=" + "HRK" + ">HRK</option>";
 
 		try {
-			if (connection.getCurrency() == null) {
-				connection.insert(data.jsonGetRequest());
+			if (connection.getCurrency() == null || !connection.check()) {
+				connection.insert(data.getJsonData());
 
 			} else {
-				connection.updateCurrData(data.jsonGetRequest());
+				connection.updateCurrData(data.getJsonData());
 			}
 			for (String s : connection.getCurrency()) {
 				string += "<option value=" + s + ">" + s + "</option>";
